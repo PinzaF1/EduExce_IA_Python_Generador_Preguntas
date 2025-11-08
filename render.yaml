@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: edu-excel-icfes
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn EduExce:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: OPENAI_MODEL
+        value: gpt-4o
+      - key: DEBUG_JSON
+        value: "0"
+      - key: SEED_RANDOMIZE
+        value: "1"
