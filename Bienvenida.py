@@ -1,4 +1,5 @@
-import pandas
+
+
 def display_welcome_message():
     print("*" * 50)
     print("\nBienvenidos al Equipo de Desarrollo de EduExce IA!")
