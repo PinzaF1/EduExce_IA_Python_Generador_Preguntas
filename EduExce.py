@@ -75,6 +75,26 @@ def _dbg(msg: str):
 
 # ===================== Catálogo de Áreas, Subtemas y Estilos =====================
 ALLOWED: Dict[str, List[str]] = {
+    "sociales": [
+        "Constitución de 1991 y organización del Estado",
+        "Historia de Colombia - Frente Nacional",
+        "Guerras Mundiales y Guerra Fría",
+        "Geografía de Colombia (mapas, territorio y ambiente)",
+    ],
+    "Ciencias Naturales": [
+        "Indagación científica (variables, control e interpretación de datos)",
+        "Fuerzas, movimiento y energía",
+        "Materia y cambios (mezclas, reacciones y conservación)",
+        "Genética y herencia",
+        "Ecosistemas y cambio climático (CTS)",
+    ],
+    "Inglés": [
+        "Verb to be (am, is, are)",
+        "Present Simple (afirmación, negación y preguntas)",
+        "Past Simple (verbos regulares e irregulares)",
+        "Comparatives and superlatives",
+        "Subject/Object pronouns & Possessive adjectives",
+    ],
     "Lenguaje": [
         "Comprensión lectora (sentido global y local)",
         "Conectores lógicos (causa, contraste, condición, secuencia)",
@@ -89,32 +109,11 @@ ALLOWED: Dict[str, List[str]] = {
         "Porcentajes y tasas (aumento, descuento, interés simple)",
         "Ecuaciones lineales y sistemas 2×2",
     ],
-    "sociales": [
-        "Constitución de 1991 y organización del Estado",
-        "Historia de Colombia (Frente Nacional, conflicto y paz)",
-        "Guerras Mundiales y Guerra Fría",
-        "Geografía de Colombia (mapas, territorio y ambiente)",
-        "Economía y ciudadanía económica (globalización y desigualdad)",
-    ],
-    "Ciencias Naturales": [
-        "Indagación científica (variables, control e interpretación de datos)",
-        "Fuerzas, movimiento y energía",
-        "Materia y cambios (mezclas, reacciones y conservación)",
-        "Genética y herencia",
-        "Ecosistemas y cambio climático (CTS)",
-    ],
-    "Inglés": [
-        "Verb to be (am, is, are)",
-        "Present Simple (afirmación, negación y preguntas)",
-        "Past Simple (verbos regulares e irregulares)",
-        "Comparatives and superlatives",
-        "Subject/Object pronouns y possessive adjectives",
-    ],
 }
 
 KOLB_STYLES = ["Convergente", "Asimilador", "Acomodador", "Divergente"]
 
-# Guías de enunciado por subtema
+# Guías de enunciado por subtema (exactas a tus nombres)
 SUBTEMA_GUIDE = {
     "Matemáticas": {
         "Operaciones con números enteros":
@@ -140,17 +139,15 @@ SUBTEMA_GUIDE = {
         "Hecho vs. opinión e inferencias":
             "Combina datos verificables y juicios de valor; pide distinguir e inferir con evidencia.",
     },
-    "Sociales y Ciudadanas": {
+    "sociales": {
         "Constitución de 1991 y organización del Estado":
             "Menciona funciones/órganos y derechos; pide finalidad/alcance.",
-        "Historia de Colombia (Frente Nacional, conflicto y paz)":
+        "Historia de Colombia - Frente Nacional":
             "Contexto histórico (años, actores, objetivos) sin anacronismos; interpreta consecuencias.",
         "Guerras Mundiales y Guerra Fría":
             "Tensiones ideológicas y efectos geopolíticos; pregunta por el rasgo central.",
         "Geografía de Colombia (mapas, territorio y ambiente)":
             "Relieve/clima vs. asentamientos/actividades; elegir síntesis coherente.",
-        "Economía y ciudadanía económica (globalización y desigualdad)":
-            "Beneficios y desafíos; pide conclusión equilibrada y fundamentada.",
     },
     "Ciencias Naturales": {
         "Indagación científica (variables, control e interpretación de datos)":
@@ -173,7 +170,7 @@ SUBTEMA_GUIDE = {
             "Adverbios de pasado; forma correcta irregular.",
         "Comparatives and superlatives":
             "Comparación de objetos concretos; cuidado con 'more/—er'.",
-        "Subject/Object pronouns y possessive adjectives":
+        "Subject/Object pronouns & Possessive adjectives":
             "Ambigüedad sujeto/objeto/posesivo; elige forma adecuada.",
     },
 }
