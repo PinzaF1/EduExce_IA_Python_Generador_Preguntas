@@ -1,18 +1,14 @@
-# ia_preguntas_service.py
-# ------------------------------------------------------------
-# Servicio de generación de preguntas tipo ICFES usando OpenAI
-# con contexto oficial Saber 11° (usa icfes_saber11_fuentes.py)
-# ------------------------------------------------------------
-
 import os
 import json
 import time
 from typing import Any, Dict, List, Optional, TypedDict
 
 from openai import OpenAI
+from dotenv import load_dotenv
 
 from icfes_saber11_fuentes import ICFES_AREA_ALIAS, ICFES_SABER11_FUENTES
 
+load_dotenv()
 
 # ============================================================
 # TIPOS
